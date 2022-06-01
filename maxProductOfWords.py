@@ -12,9 +12,9 @@ def maxProduct(words: list[str]) -> int:
   for i in range(len(words) - 1):
     for j in range(1, len(words)):
       if uniques[i].isdisjoint(uniques[j]):
-          curr = len(words[i]) * len(words[j])
-          if curr > max_prod:
-            max_prod = curr
+        curr = len(words[i]) * len(words[j])
+        if curr > max_prod:
+          max_prod = curr
   
   return max_prod
 
