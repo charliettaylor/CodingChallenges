@@ -1,6 +1,6 @@
 # 1480. Running Sum of 1d Array
 
-def runningSum(self, nums: list[int]) -> list[int]:
+def runningSum(nums: list[int]) -> list[int]:
   prev = nums[0]
   for i in range(1, len(nums)):
     nums[i] += prev
@@ -10,4 +10,4 @@ def runningSum(self, nums: list[int]) -> list[int]:
 
 if __name__ == '__main__':
   # Should output [1, 3, 6, 10]
-  print(runningSum(runningSum, [1,2,3,4]))
+  print(runningSum([1,2,3,4]))
