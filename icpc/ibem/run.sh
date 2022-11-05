@@ -1,0 +1,1 @@
+python3 ibem.py < input.txt
