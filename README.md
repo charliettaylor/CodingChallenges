@@ -1,2 +1,2 @@
-# LeetCode
-My solutions to LeetCode problems, trying to do a few a week!
+# Coding Challenges
+My solutions to miscellaneous coding problems, from LeetCode to ICPC to Advent of Code!
