@@ -2,15 +2,15 @@ with open('input.txt') as file:
   lines = [line.rstrip().lower() for line in file]
 
 match = {
-  'a': 'x',
-  'b': 'y',
-  'c': 'z'
+    'a': 'x',
+    'b': 'y',
+    'c': 'z'
 }
 
 values = {
-  'x': 1,
-  'y': 2,
-  'z': 3
+    'x': 1,
+    'y': 2,
+    'z': 3
 }
 
 points = 0

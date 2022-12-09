@@ -8,6 +8,7 @@ currdir = []
 nextIsInput = False
 allFiles = set()
 
+
 def process_cmd(currdir, line: str):
   last = line.split()[-1]
   if line.startswith('cd') and last != '/' and last != '..':

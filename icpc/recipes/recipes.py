@@ -7,8 +7,8 @@ for i in range(int(input())):
   for j in range(r):
     name, weight, percentage = input().split()
     ingredients.append([name, float(weight), float(percentage)])
-  
-  base = next(filter(lambda x: x[2]  == 100.0, ingredients))
+
+  base = next(filter(lambda x: x[2] == 100.0, ingredients))
 
   ratio = d / p
   baseW = base[1] * ratio

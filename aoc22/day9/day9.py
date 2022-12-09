@@ -17,22 +17,22 @@ for line in lines:
   for i in range(int(dist)):
     if dir == 'R':
       H[1] += 1
-      if T[1]+2 == H[1]:
+      if T[1] + 2 == H[1]:
         T[1] = H[1] - 1
         T[0] = H[0]
     elif dir == 'L':
       H[1] -= 1
-      if T[1]-2 == H[1]:
+      if T[1] - 2 == H[1]:
         T[1] = H[1] + 1
         T[0] = H[0]
     elif dir == 'U':
       H[0] -= 1
-      if T[0]-2 == H[0]:
+      if T[0] - 2 == H[0]:
         T[0] = H[0] + 1
         T[1] = H[1]
     else:
       H[0] += 1
-      if T[0]+2 == H[0]:
+      if T[0] + 2 == H[0]:
         T[0] = H[0] - 1
         T[1] = H[1]
     print(T)

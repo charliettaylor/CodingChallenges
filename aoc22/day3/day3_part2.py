@@ -10,7 +10,7 @@ for i in range(0, len(lines), 3):
     if j in s and j in t:
       maxList.append(ord(j) - 96 if ord(j) >= 97 else ord(j) - 65 + 27)
       break
-  
+
 
 final = 0
 

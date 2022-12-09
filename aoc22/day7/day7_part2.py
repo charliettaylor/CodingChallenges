@@ -40,7 +40,6 @@ name = ''
 
 for size in dirSizes.values():
   if size < min and size > diff:
-    min  = size
+    min = size
 
 print(min)
-

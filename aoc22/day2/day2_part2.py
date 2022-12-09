@@ -2,9 +2,9 @@ with open('input.txt') as file:
   lines = [line.rstrip().lower() for line in file]
 
 values = {
-  'a': 1,
-  'b': 2,
-  'c': 3
+    'a': 1,
+    'b': 2,
+    'c': 3
 }
 
 points = 0

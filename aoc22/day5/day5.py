@@ -2,7 +2,7 @@ with open('input.txt') as f:
   lines = f.readlines()
 
 i = 0
-crates = [[], [], [],[], [], [],[], [], []]
+crates = [[], [], [], [], [], [], [], [], []]
 
 while not lines[i][1] == '1':
   curr = 0
@@ -14,8 +14,9 @@ while not lines[i][1] == '1':
 
 # print(crates)
 
-for line in lines[i+2:]:
-  qty, frm, to = int(line[5:7].strip()), int(line[12:14].strip()), int(line[17:].strip())
+for line in lines[i + 2:]:
+  qty, frm, to = int(line[5:7].strip()), int(
+      line[12:14].strip()), int(line[17:].strip())
   # print(qty, frm, to)
   top = []
   for i in range(qty):
