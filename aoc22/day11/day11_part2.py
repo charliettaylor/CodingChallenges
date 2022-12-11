@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from math import floor
 from pprint import pprint as pp
 
+
 @dataclass
 class Monkey:
   id: int
@@ -47,13 +48,13 @@ for r in range(10000):
     for i in range(len(monkeys[m].items)):
       curr = monkeys[m]
       op = monkeys[m].op_val if curr.op_val != 0 else curr.items[i]
-      
+
       # apply operation
       if monkeys[m].operation == '+':
         curr.items[i] = (curr.items[i] + op) % crt
       else:
         curr.items[i] = (curr.items[i] * op) % crt
-      
+
       # divide worry by 3
       # curr.items[i] //= 3
 
@@ -63,12 +64,9 @@ for r in range(10000):
         monkeys[curr.true_move].items.append(curr.items[i])
       else:
         monkeys[curr.false_move].items.append(curr.items[i])
-    
+
     monkeys[m].inspect += len(monkeys[m].items)
     monkeys[m].items.clear()
-  # if r == 0:
-  #   pp(monkeys)
-  # print(r)
 
 top2 = sorted([x.inspect for x in monkeys])[-2:]
 
