@@ -14,6 +14,7 @@ grid = []
 
 S = Node((0,0), -1)
 E = Node((0,0), -1)
+starts = []
 
 for i, line in enumerate(lines):
   temp = []
@@ -24,8 +25,11 @@ for i, line in enumerate(lines):
     elif x == 'S':
       S = Node((i,j), 1)
       temp.append(1)
+      starts.append(Node((i,j), 1))
     else:
       temp.append(ord(x) - 96)
+      if x == 'a':
+        starts.append(Node((i,j), 1))
   grid.append(temp)
 
 # print(grid)
@@ -60,5 +64,8 @@ def bfs(start: Node, end: Node, grid: list[list[int]]):
 
   return 1_000_000_000
 
-print(E.pos)
-print(bfs(S, E, grid))
+paths = set()
+for x in starts:
+  paths.add(bfs(x, E, grid))
+
+print(min(paths))
