@@ -1,0 +1,7 @@
+my_public = DD
+if opp == AA then my_private = DD
+if opp == DD then my_private = DD
+if opp == SS then my_private = DD
+if opp == AD then my_private = DD
+if opp == AS then my_private = DD
+if opp == DS then my_private = DD
