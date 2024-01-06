@@ -20,7 +20,9 @@ def valid_game(pull_list: str) -> bool:
 
 with open("in.txt") as f:
     lines = f.readlines()
+
 sum = 0
+
 for line in lines:
     name, game = line.split(":")
     name = int(name.split()[-1])
